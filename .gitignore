@@ -1,0 +1,24 @@
+# 密钥与本地配置
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+
+# 运行时数据（保留目录结构，忽略内容）
+storage/todos.json
+storage/sessions/*.json
+storage/workspace/*
+
+# 保留占位
+!storage/sessions/.gitkeep
+!storage/workspace/.gitkeep
+
+# 系统
+.DS_Store
+Thumbs.db
