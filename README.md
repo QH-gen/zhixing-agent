@@ -3,8 +3,20 @@
 > 软件工程《AI 智能体构建》小组作业
 > 一个既能**自然语言对话（能说）**，又能**调用工具真正落地办事（会做）**的 AI Agent。
 
+[![repo](https://img.shields.io/badge/GitHub-QH--gen%2Fzhixing--agent-181717?logo=github)](https://github.com/QH-gen/zhixing-agent)
+
 「知行」取自「知行合一」——知是理解，行是执行。名字本身就说明了这个智能体的两端：
 一端是**语言理解**，一端是**工具执行**。
+
+## 零、三分钟跑起来
+
+```bash
+git clone https://github.com/QH-gen/zhixing-agent.git
+cd zhixing-agent
+python server.py        # 浏览器自动打开 http://127.0.0.1:8848/
+```
+
+**核心功能零第三方依赖，不需要 `pip install`，也不需要 API Key。**
 
 ---
 
@@ -144,8 +156,21 @@ zhixing-agent/
 
 ## 九、GitHub
 
-代码提交至本小组第一次团队作业创建的公共仓库（见博客园随笔中的链接说明）。
+- 仓库地址：<https://github.com/QH-gen/zhixing-agent>（Public）
+- 项目根目录即仓库根目录，`main` 分支
 
-## 十、许可
+```bash
+git clone https://github.com/QH-gen/zhixing-agent.git
+```
+
+## 十、小组分工
+
+| 成员 | 学号 | 负责模块 |
+|------|------|----------|
+| 邓子豪 | 3124004165 | 智能体内核 + 大模型接入 + HTTP 服务（`core/agent.py`、`core/llm.py`、`core/memory.py`、`server.py`） |
+| 黄琪 | 3124004169 | 工具层 + 前端工作台（`tools/todo_tools.py`、`tools/util_tools.py`、`web/index.html`、语音） |
+| 李文争 | 3124004171 | 外部接口 + 安全 + 文档（`tools/weather_tools.py`、`tools/file_tools.py`、随笔与演示录制） |
+
+## 十一、许可
 
 本项目为课程作业，仅供学习交流使用。
